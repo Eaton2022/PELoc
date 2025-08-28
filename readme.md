@@ -2,7 +2,14 @@
 ------
 This is the official code repository for the paper.
 
-## Introduction
-------
-PELoc is the first LiDAR-based localization algorithm designed for single-trajectory localization. It achieves near sub-meter accuracy on most test trajectories of QEOxford and NCLT datasets. The core of PELoc lies in pose enhancement.
+# PELoc
 
+**PELoc** is the first LiDAR-based localization algorithm designed for **single-trajectory localization**.  
+It achieves **near sub-meter accuracy** on most test trajectories of **QEOxford** and **NCLT** datasets.  
+The core of PELoc lies in **pose enhancement**.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Eaton2022/PELoc/main/mm.png" width="700">
+</p>
+
+> 📌 This repository contains the official implementation of our paper.
