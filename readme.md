@@ -22,3 +22,12 @@ The core of PELoc lies in **pose enhancement**.
 </p>
 
 > 
+
+
+## Experimental Results
+
+- We provide experimental results for **Oxford**, **QEOxford**, and **NCLT** datasets in the `log` directory.  
+- Pretrained model weights are available on Baidu Netdisk:  
+
+🔗 [Download Link](https://pan.baidu.com/s/1nwnnpqaF84gjtLF-Yc6MPw)  
+🔑 Extraction Code: `nxte`
