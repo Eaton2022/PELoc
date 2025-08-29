@@ -41,8 +41,7 @@ We first use **LTI** to generate two additional trajectories offline.  You need 
 
 We provide two interpolation methods.  The LTI implementations for **NCLT** and **Oxford/QEOxford** have some differences,  but both significantly improve the accuracy of single-trajectory localization.
 
-The **LTI_q** version achieves better accuracy improvement,  while the standard **LTI** version is more suitable for integration with **KP-CL**.   
-We will later upload our simulated point clouds to a cloud drive for download. You can also generate simulated point cloud trajectories by yourself.
+The **LTI_q** version achieves better accuracy improvement,  while the standard **LTI** version is more suitable for integration with **KP-CL**.  We will later upload our simulated point clouds to a cloud drive for download. You can also generate simulated point cloud trajectories by yourself.
 
 
 ### Two Versions of PELoc
