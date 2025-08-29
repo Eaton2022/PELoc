@@ -25,7 +25,7 @@ The core of PELoc lies in **pose enhancement**.
 
 
 ## Experimental Results
-
+------
 - We provide experimental results for **Oxford**, **QEOxford**, and **NCLT** datasets in the `log` directory.  
 - Pretrained model weights are available on Baidu Netdisk:  
 
@@ -34,11 +34,12 @@ The core of PELoc lies in **pose enhancement**.
 
 
 ### LTI Usage
-
+------
 PELoc selects **2019-01-11-14-02-26** for Oxford/QEOxford  and **2012-02-18** for NCLT.  
 
 We first use **LTI** to generate two additional trajectories offline.  You need to prepare both the **point cloud data** and the **pose files**,  then run the Python scripts in the `LTI` folder.
 
 We provide two interpolation methods.  The LTI implementations for **NCLT** and **Oxford/QEOxford** have some differences,  but both significantly improve the accuracy of single-trajectory localization.
 
-The **LTI_q** version achieves better accuracy improvement,  while the standard **LTI** version is more suitable for integration with **KP-CL**.
+The **LTI_q** version achieves better accuracy improvement,  while the standard **LTI** version is more suitable for integration with **KP-CL**.   
+We will later upload our simulated point clouds to a cloud drive for download. You can also generate simulated point cloud trajectories by yourself.
