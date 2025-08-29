@@ -31,3 +31,20 @@ The core of PELoc lies in **pose enhancement**.
 
 🔗 [Download Link](https://pan.baidu.com/s/1nwnnpqaF84gjtLF-Yc6MPw)  
 🔑 Extraction Code: `nxte`
+
+
+### LTI Usage
+
+PELoc selects **2019-01-11-14-02-26** for Oxford/QEOxford  
+and **2012-02-18** for NCLT.  
+
+We first use **LTI** to generate two additional trajectories offline.  
+You need to prepare both the **point cloud data** and the **pose files**,  
+then run the Python scripts in the `LTI` folder.
+
+We provide two interpolation methods.  
+The LTI implementations for **NCLT** and **Oxford/QEOxford** have some differences,  
+but both significantly improve the accuracy of single-trajectory localization.
+
+The **LTI_q** version achieves better accuracy improvement,  
+while the standard **LTI** version is more suitable for integration with **KP-CL**.
