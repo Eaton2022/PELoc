@@ -53,7 +53,6 @@ We will later upload our simulated point clouds to a cloud drive for download. Y
 2. **PELoc-full**  
    This version additionally incorporates **KP-CL** during training.   It requires more training time, but achieves higher localization accuracy.
 
-💡 Tip: If you are using the **PELoc-quick** version,  
-we recommend using the **LTI_q** version for generating simulated trajectories.   
+💡 Tip: If you are using the **PELoc-quick** version,  we recommend using the **LTI_q** version for generating simulated trajectories.   
 
 
