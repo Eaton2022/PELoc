@@ -52,6 +52,8 @@ The **LTI_q** version achieves better accuracy improvement,  while the standard 
 2. **PELoc-full**  
    This version additionally incorporates **KP-CL** during training.   It requires more training time, but achieves higher localization accuracy.
 
+In the full code release, we provide the **PELoc-full** version. If you want to accelerate training, you may skip using **KP-CL**.
+
 💡 Tip: If you are using the **PELoc-quick** version,  we recommend using the **LTI_q** version for generating simulated trajectories.   
 
 
