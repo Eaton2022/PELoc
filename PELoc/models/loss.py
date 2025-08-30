@@ -74,9 +74,9 @@ class CriterionCoordinate(nn.Module):
         loss_map = torch.mean(loss_map)
 
         # KP CL loss
-        # loss_cl = self.KP_CL(features)
+        loss_cl = self.KP_CL(features)
         # print(loss_cl*2)
-        loss_map = loss_map #+2*loss_cl
+        loss_map = loss_map +2*loss_cl
 
         return loss_map
 

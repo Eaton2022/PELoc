@@ -2,7 +2,7 @@ TRAIN:
   epochs: 50
   lr: 1e-3
   seed: 7
-  batch_size: 100   ## if you need to accerate training, turn off KP-CL, and set batchsize to 100
+  batch_size: 15   ## if you need to accerate training, turn off KP-CL, and set batchsize to 100
   restart_num: 5
   warmup_sche: True
   weight_decay: 1200
