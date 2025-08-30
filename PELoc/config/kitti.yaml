@@ -1,0 +1,65 @@
+TRAIN:
+  lr: 1e-3
+  seed: 7
+  batch_size: 100 # ACE
+#  batch_size: 12
+  epochs: 100
+  restart_num: 5
+  warmup_sche: True
+  weight_decay: 1200
+  num_workers: 16
+  pin_memory: True
+  cudnn_benchmark: True
+  persistent_workers: True
+
+  voxel_size: 0.3
+  max_volume_space: [ 60, 60, 4 ]
+  min_volume_space: [ -60, -60, -4 ]
+
+  eval_interval: 5
+  print_interval: 100
+
+  aug: True
+  freeze: False
+  clip_grad: 1.0
+  num_scenes: 10
+  item_scenes: 3
+  test_scene_id: 7 # 测试哪个场景？
+
+  exp_dir: 'log/'
+  exp_name: 'single_kitti'
+  data_set: 'KITTI'
+  data_root: '/ava16t/lw/Data'
+
+MODEL:
+  num_encoder_features: 512
+  num_head_blocks: 2
+  mlp_ratio: 2.0
+  norm_type: 'BN'
+
+AUGMENTATION:
+  # flip
+  p_flipx: 0.
+  p_flipy: 0.5
+
+  # translation
+  p_transx: 0.5
+  trans_xmin: -1
+  trans_xmax: 1
+  p_transy: 0.5
+  trans_ymin: -1
+  trans_ymax: 1
+  p_transz: 0.0
+  trans_zmin: 0.
+  trans_zmax: 0.
+
+  # rotation
+  p_rot_roll: 0.0
+  rot_rollmin: -5
+  rot_rollmax: 5
+  p_rot_pitch: 0.0
+  rot_pitchmin: -5
+  rot_pitchmax: 5
+  p_rot_yaw: 0.5
+  rot_yawmin: -10
+  rot_yawmax: 10

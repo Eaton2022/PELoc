@@ -1,0 +1,60 @@
+TRAIN:
+  epochs: 50
+  lr: 1e-3
+  seed: 7
+  batch_size: 100   ## if you need to accerate training, turn off KP-CL, and set batchsize to 100
+  restart_num: 5
+  warmup_sche: True
+  weight_decay: 1200
+  num_workers: 24
+  pin_memory: True
+  cudnn_benchmark: True
+  persistent_workers: True
+  resume_train: 
+  # resume_train: ''
+  voxel_size: 0.25
+
+  eval_interval: 5
+  print_interval: 200
+
+  aug: True
+
+  # exp_dir: 'log/18-14-14-42/'
+  exp_dir: 'log/15-13-06-37'
+  exp_name: 'QEOxford'
+  data_set: 'QEOxford'
+  data_root: '/home/data/CYD/data/Oxford/'
+
+MODEL:
+  num_encoder_features: 512
+  num_head_blocks: 2
+  mlp_ratio: 2.0
+
+
+AUGMENTATION:
+  #  flip  
+  p_flipx: 0.5  
+  p_flipy: 0.5
+
+  # translation
+  p_transx: 0.5
+  trans_xmin: -3
+  trans_xmax: 3
+  p_transy: 0.5
+  trans_ymin: -3
+  trans_ymax: 3
+  p_transz: 0.5
+  trans_zmin: -1
+  trans_zmax: 1
+
+  # rotation
+  p_rot_roll: 0.5
+  rot_rollmin: -45
+  rot_rollmax: 45
+  p_rot_pitch: 0.5
+  rot_pitchmin: -45
+  rot_pitchmax: 45
+  p_rot_yaw: 0.5
+  rot_yawmin: -180
+  rot_yawmax: 180
+

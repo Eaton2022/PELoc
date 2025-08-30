@@ -1,0 +1,61 @@
+TRAIN:
+  epochs: 100
+  lr: 1e-3
+  seed: 7
+  batch_size: 100
+  restart_num: 5
+  warmup_sche: True
+  weight_decay: 1200
+  num_workers: 24
+  pin_memory: True
+  cudnn_benchmark: True
+  persistent_workers: True
+
+  voxel_size: 0.3
+#  voxel_size: 0.3
+
+  eval_interval: 5
+  print_interval: 200
+
+  aug: True
+  freeze: False
+  num_scenes: 1
+  test_scene_id: 1
+
+  exp_dir: 'log/'
+  exp_name: 'nuscenes'
+  data_set: 'nuScenes'
+  data_root: '/3D/lw'
+
+MODEL:
+  num_encoder_features: 512
+  num_head_blocks: 2
+  mlp_ratio: 2.0
+
+
+AUGMENTATION:
+  # flip
+  p_flipx: 0.
+  p_flipy: 0.5
+
+  # translation
+  p_transx: 0.5
+  trans_xmin: -3
+  trans_xmax: 3
+  p_transy: 0.5
+  trans_ymin: -3
+  trans_ymax: 3
+  p_transz: 0.5
+  trans_zmin: -1
+  trans_zmax: 1
+
+  # rotation
+  p_rot_roll: 0.5
+  rot_rollmin: -45
+  rot_rollmax: 45
+  p_rot_pitch: 0.5
+  rot_pitchmin: -45
+  rot_pitchmax: 45
+  p_rot_yaw: 0.5
+  rot_yawmin: -180
+  rot_yawmax: 180
