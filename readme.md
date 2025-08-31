@@ -59,7 +59,7 @@ In the full code release, we provide the **PELoc-full** version. If you want to 
 
 Environment Setup
 ------ 
-We provide a YAML file in the PELoc folder for environment configuration: SGLoc_env.yaml. Our experiments were conducted with CUDA 11.6 on a single NVIDIA RTX 4090 GPU. In addition, our environment requires pytorch3d to be placed inside the PELoc directory, into pytorch3d folder, and then installed with:
+We provide a YAML file in the PELoc folder for environment configuration: [SGLoc_env.yaml](https://github.com/Eaton2022/PELoc/blob/main/PELoc/SGLoc_env.yaml). Our experiments were conducted with CUDA 11.6 on a single NVIDIA RTX 4090 GPU. In addition, our environment requires pytorch3d to be placed inside the PELoc directory, into pytorch3d folder, and then installed with:
 ~~~bash
 pip install -e .
 ~~~
