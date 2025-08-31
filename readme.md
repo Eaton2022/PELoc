@@ -95,6 +95,6 @@ CUDA_VISIBLE_DEVICES=x test.py
 We sincerely thank the excellent open-source point cloud localization projects, including [SGLoc](https://github.com/liw95/SGLoc) and [LightLoc](https://github.com/liw95/LightLoc).
 
 ### Citation
-
+------ 
 This project has not been officially released for citation.
 
