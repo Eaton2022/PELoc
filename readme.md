@@ -72,10 +72,13 @@ We provide a compatible version of pytorch3d via Baidu Netdisk:
 ------ 
 Set `x = 0` or `1` to select the GPU device.
 
-#### Single-GPU Training
 ```bash
+#### Single-GPU Training
+
 CUDA_VISIBLE_DEVICES=x accelerate launch --num_processes 1 --mixed_precision fp16 train.py
 
 #### Single-GPU Testing
 CUDA_VISIBLE_DEVICES=x test.py
+```
 
+### Training and Testing
