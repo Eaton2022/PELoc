@@ -45,6 +45,9 @@ We provide two interpolation methods.  The LTI implementations for **NCLT** and 
 The **LTI_q** version achieves better accuracy improvement,  while the standard **LTI** version is more suitable for integration with **KP-CL**.  We will later upload our simulated point clouds to a cloud drive for download. You can also generate simulated point cloud trajectories by yourself.
 
 
+**Note:** In our project, the trajectory point clouds and poses generated for Oxford/QEOxford are stored in the `2019-01-11-14-02-26` folder,  while those generated for NCLT are placed at the same level as `2012-02-18`.  Therefore, the way the point clouds and poses are loaded differs between these datasets.  Please pay attention to this when using our code.  For details, refer to: [lidarloc.py](https://github.com/Eaton2022/PELoc/blob/main/PELoc/datasets/lidarloc.py)
+
+
 ### Two Versions of PELoc
 ------
 1. **PELoc-quick**  
