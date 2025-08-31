@@ -15,7 +15,7 @@ The core of PELoc lies in **pose enhancement**.
 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Eaton2022/PELoc/main/mm.png" width="700">
+  <img src="https://raw.githubusercontent.com/Eaton2022/My_image/main/image/PELoc/mm.png" width="700">
 </p>
 
 
