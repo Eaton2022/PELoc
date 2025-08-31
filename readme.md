@@ -58,11 +58,11 @@ In the full code release, we provide the **PELoc-full** version. If you want to 
 💡 Tip: If you are using the **PELoc-quick** version,  we recommend using the **LTI_q** version for generating simulated trajectories.   
 
 Environment Setup
-
+------ 
 We provide a YAML file in the PELoc folder for environment configuration: SGLoc_env.yaml. Our experiments were conducted with CUDA 11.6 on a single NVIDIA RTX 4090 GPU. In addition, our environment requires pytorch3d to be placed inside the PELoc directory, into pytorch3d folder, and then installed with:
 ~~~bash
 pip install -e .
-
+~~~
 We provide a compatible version of pytorch3d via Baidu Netdisk:
 
 🔗 [Download Link](https://pan.baidu.com/s/1HbPQRkg2WxpdEgeZ_znHZw)  
