@@ -59,7 +59,7 @@ In the full code release, we provide the **PELoc-full** version. If you want to 
 
 Environment Setup
 ------ 
-We provide a YAML file in the PELoc folder for environment configuration: [PELoc_env.yaml](https://github.com/Eaton2022/PELoc/blob/main/PELoc/SGLoc_env.yaml). Our experiments were conducted with CUDA 11.6 on a single NVIDIA RTX 4090 GPU. In addition, our environment requires pytorch3d to be placed inside the PELoc directory, into pytorch3d folder, and then installed with:
+We provide a YAML file in the PELoc folder for environment configuration: [PELoc_env.yaml](https://github.com/Eaton2022/PELoc/blob/main/PELoc/SGLoc_env.yaml). Our experiments were conducted with CUDA 11.6, Python 3.8.20 on a single NVIDIA RTX 4090 GPU. In addition, our environment requires pytorch3d to be placed inside the PELoc directory, into pytorch3d folder, and then installed with:
 ~~~bash
 pip install -e .
 ~~~
@@ -67,6 +67,12 @@ We provide a compatible version of pytorch3d via Baidu Netdisk:
 
 🔗 [Download Link](https://pan.baidu.com/s/1HbPQRkg2WxpdEgeZ_znHZw)  
 🔑 Extraction Code: `ytqa`
+
+### Data Download
+------ 
+Please refer to this project for data preparation: [SGLoc](https://github.com/liw95/SGLoc).  
+
+> **Note:** PELoc does **not** use semantic-segmented point clouds. Our experiments showed that segmentation does not improve performance. We use labeled point clouds because they were preprocessed before.
 
 ### Training and Testing
 ------ 
@@ -81,4 +87,9 @@ CUDA_VISIBLE_DEVICES=x accelerate launch --num_processes 1 --mixed_precision fp1
 CUDA_VISIBLE_DEVICES=x test.py
 ```
 
-### Training and Testing
+### Acknowledgements
+------ 
+We sincerely thank the excellent open-source point cloud localization projects, including [SGLoc](https://github.com/liw95/SGLoc) and [LightLoc](https://github.com/liw95/LightLoc).
+
+
+
