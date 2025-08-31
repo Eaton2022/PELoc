@@ -8,13 +8,16 @@
 It achieves **near sub-meter accuracy** on most test trajectories of **QEOxford** and **NCLT** datasets.  
 The core of PELoc lies in **pose enhancement**.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Eaton2022/PELoc/main/mm.png" width="700">
-</p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Eaton2022/PELoc/main/author.png" width="700">
 </p>
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Eaton2022/PELoc/main/mm.png" width="700">
+</p>
+
 
 > 
 
