@@ -91,7 +91,7 @@ Set `x = 0` or `1` to select the GPU device.
 CUDA_VISIBLE_DEVICES=x accelerate launch --num_processes 1 --mixed_precision fp16 train.py
 
 #### Single-GPU Testing
-CUDA_VISIBLE_DEVICES=x test.py
+CUDA_VISIBLE_DEVICES=x python test.py
 ```
 
 ### Acknowledgements
