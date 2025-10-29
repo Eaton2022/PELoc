@@ -99,7 +99,9 @@ CUDA_VISIBLE_DEVICES=x python test.py
 We sincerely thank the excellent open-source point cloud localization projects, including [SGLoc](https://github.com/liw95/SGLoc) and [LightLoc](https://github.com/liw95/LightLoc).
 
 ### Citation
+If you find this work useful, please cite it.
 ------ 
+~~~bash
 @inproceedings{chen2025unleashing,
   title={Unleashing the Power of Data Generation in One-Pass Outdoor LiDAR Localization},
   author={Chen, Yidong and Li, Qi and Yang, Yuyang and Li, Wen and Ao, Sheng and Wang, Cheng},
@@ -107,4 +109,6 @@ We sincerely thank the excellent open-source point cloud localization projects, 
   pages={199--208},
   year={2025}
 }
+~~~
+
 
