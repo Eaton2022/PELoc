@@ -100,5 +100,11 @@ We sincerely thank the excellent open-source point cloud localization projects, 
 
 ### Citation
 ------ 
-This project has not been officially released for citation.
+@inproceedings{chen2025unleashing,
+  title={Unleashing the Power of Data Generation in One-Pass Outdoor LiDAR Localization},
+  author={Chen, Yidong and Li, Qi and Yang, Yuyang and Li, Wen and Ao, Sheng and Wang, Cheng},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={199--208},
+  year={2025}
+}
 
